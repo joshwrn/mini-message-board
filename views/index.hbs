@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<nav>
+  <a href='/'>Home</a>
+  <a href='/form'>Form</a>
+</nav>
+
+<ul class='list-group'>
+  {{#each messages}}
+    <div class='list-container'>
+      <div class='message-container'>
+        <li class='list-user'>{{this.user}}: </li>
+        <li>{{this.text}}</li>
+      </div>
+      <li class='list-date'>{{this.added}}</li>
+    </div>
+  {{/each}}
+</ul>

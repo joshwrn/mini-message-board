@@ -1,0 +1,139 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+a {
+  color: #5e5df0;
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.list-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 500px;
+  margin: 50px 0;
+  border-radius: 10px;
+  z-index: 2;
+  cursor: pointer;
+  transition: box-shadow 0.35s;
+}
+
+.list-container:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+}
+
+.list-user {
+  font-weight: bold;
+}
+
+.list-date {
+  color: grey;
+  font-size: 11px;
+}
+
+/*? form styles */
+
+.form-group {
+  margin: 25px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form p {
+  color: grey;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: fit-content;
+  border: 0;
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: #5e5df0 0 12px 20px -10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-control {
+  padding: 0em 1em 0 1em;
+  border: 1px solid rgba(124, 124, 124, 0.281);
+  border-radius: 7px;
+  height: 3em;
+  width: 250px;
+  resize: none;
+}
+
+.textarea {
+  padding: 16px;
+  height: 100px;
+}
+
+input,
+select,
+textarea {
+  color: rgb(109, 109, 109);
+  text-align: left;
+  font-family: helvetica;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
